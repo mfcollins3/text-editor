@@ -1,0 +1,17 @@
+[package]
+name = "text-editor"
+version = "0.1.0"
+edition = "2021"
+description = "A terminal-based Markdown text editor built with ratatui and crossterm"
+
+[[bin]]
+name = "text-editor"
+path = "src/main.rs"
+
+[dependencies]
+ratatui = { version = "0.29", features = ["crossterm"] }
+crossterm = "0.28"
+ropey = "1"
+pulldown-cmark = "0.12"
+arboard = "3"
+unicode-width = "0.2"
